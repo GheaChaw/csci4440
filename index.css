@@ -1,0 +1,86 @@
+.cormorant {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.jura {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.cutive-mono-regular {
+    font-family: "Cutive Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+}
+
+*{
+    background-color: #f5f8ff;
+    padding:5px;
+}
+.header{
+    display:flex;
+    align-items: center;
+    height:10%;
+    font-size:60pt;
+    font-weight:100;
+}
+.header p{
+    font-family: "Jura", sans-serif;
+    font-weight: 400;
+    font-style:italic;
+    margin:0;
+}
+hr{
+    height:0px;
+    border-width:0px;
+    color:gray;
+    background-color:gray;
+    margin:20px;
+    padding:1px;
+}
+h1{
+    font-family: "Jura", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size:80pt;
+    color:#313F50;
+    margin:0 20px;
+}
+h2{
+    font-family: "Jura", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:30pt;
+    color:#313F50;
+    margin:020px;
+    
+}
+p{
+    font-family: "Jura", sans-serif;
+    
+    font-family: monospace;
+    font-weight: 200;
+    font-style: normal;
+    font-size:20px;
+    color:#47739A;
+    margin:0 20px;
+}
+.typing-text {
+    display: inline-block;
+    font-family: monospace;
+    /* Creates a solid right border to look like a cursor */
+    border-right: 2px solid #000; 
+    /* Applies the blinking animation */
+    animation: blink 1s step-end infinite;
+    margin-bottom: 10px;
+}
+
+/* The animation steps instantly between solid and transparent colors */
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #47739A; }
+}
