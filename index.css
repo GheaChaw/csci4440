@@ -4,6 +4,13 @@
     font-weight: 200;
     font-style: normal;
 }
+:root{
+    --x: 10%;
+    --y: 10%;
+    --bg: #f5f8ff;
+    --dark: #d8d4ff;
+    --light: #f5f8ff;
+}
 
 .jura {
     font-family: "Jura", sans-serif;
@@ -17,10 +24,10 @@
     font-style: normal;
 }
 
-*{
+/* *{
     background-color: #f5f8ff;
     padding:5px;
-}
+} */
 .header{
     display:flex;
     align-items: center;
@@ -39,7 +46,7 @@ hr{
     border-width:0px;
     color:gray;
     background-color:gray;
-    margin:20px;
+    margin:40px;
     padding:1px;
 }
 h1{
@@ -77,6 +84,42 @@ p{
     /* Applies the blinking animation */
     animation: blink 1s step-end infinite;
     margin-bottom: 10px;
+}
+footer{
+    font-family: "Jura", sans-serif;
+    
+    font-family: monospace;
+    display:flex;
+    width:100%;
+    justify-content: center;
+    
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding:15px;
+    border-top-color: #47739A;
+    margin-top:10px;
+}
+.gradient{
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(
+        circle 250px at var(--x) var(--y),
+        var(--light) 0%,
+        color-mix(in srgb, var(--light) 20%, var(--dark)) 20%,
+        var(--dark) 60%
+    );
+    transition: background 40ms linear;
+    z-index:-1;
+}
+
+  /* Layer 2: grain, drawn once as SVG noise and tiled */
+.grain{
+    position: fixed;
+    inset: 0;
+    opacity: 0.80;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index:-1;
 }
 
 /* The animation steps instantly between solid and transparent colors */
